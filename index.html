@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Lý Bí Tích Thánh Thể cho Bé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f9ff;
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+            height: 100vh;
+            padding: 40px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            border: 8px solid #bae6fd;
+        }
+        .btn-nav {
+            background: #38bdf8;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            margin: 10px;
+        }
+        .btn-nav:hover {
+            background: #0ea5e9;
+            transform: scale(1.1);
+        }
+        .step-circle {
+            background: #fef08a;
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 15px;
+            border: 3px solid #facc15;
+        }
+        .quiz-option {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+        .quiz-option:hover {
+            background: #e0f2fe;
+            border-color: #38bdf8;
+        }
+        .character-img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .footer-nav {
+            position: fixed;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Trang đầu -->
+    <div class="slide active" id="slide1">
+        <div class="card">
+            <h1 class="text-5xl font-bold text-sky-600 mb-6">ĐÓN CHÚA VÀO LÒNG</h1>
+            <p class="text-2xl text-gray-600 mb-8">Hành trình chuẩn bị rước Thánh Thể dành cho các bé</p>
+            <div class="flex justify-center">
+                 <div class="text-8xl">⛪✨🍞</div>
+            </div>
+            <p class="mt-8 font-semibold text-sky-500">Nhấn nút "Tiếp" để bắt đầu bài học nhé!</p>
+        </div>
+    </div>
+
+    <!-- Slide 2: Bí tích Thánh Thể là gì? -->
+    <div class="slide" id="slide2">
+        <div class="card">
+            <h2 class="text-3xl font-bold text-sky-600 mb-6">1. BÍ TÍCH THÁNH THỂ LÀ GÌ?</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="text-9xl">🎁</div>
+                <div class="text-left">
+                    <div class="bg-sky-50 p-4 rounded-2xl mb-4 border-l-8 border-sky-400">
+                        <p class="text-xl font-bold text-sky-700">Món quà từ Chúa Giêsu</p>
+                        <p>Dưới hình Bánh và Rượu, Chúa Giêsu hiện diện thật sự để ở lại trong trái tim các con.</p>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-2xl border-l-8 border-yellow-400">
+                        <p class="text-xl font-bold text-yellow-700">Thức ăn linh hồn</p>
+                        <p>Giúp linh hồn mạnh mẽ, ngoan ngoãn và biết yêu thương mọi người.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: 5 Bước xưng tội -->
+    <div class="slide" id="slide3">
+        <div class="card overflow-y-auto max-h-[90vh]">
+            <h2 class="text-3xl font-bold text-sky-600 mb-4">2. DỌN SẠCH "NGÔI NHÀ" TÂM HỒN</h2>
+            <p class="mb-4 text-gray-500">(5 Bước Xưng Tội)</p>
+            <div class="grid grid-cols-1 gap-3 text-left">
+                <div class="flex items-center bg-gray-50 p-3 rounded-xl">
+                    <span class="step-circle">1</span>
+                    <p><b>Xét mình:</b> Nhớ lại những lúc chưa ngoan (cãi lời, nói dối...).</p>
+                </div>
+                <div class="flex items-center bg-gray-50 p-3 rounded-xl">
+                    <span class="step-circle">2</span>
+                    <p><b>Ăn năn tội:</b> Thấy buồn và hối lỗi vì những việc đó.</p>
+                </div>
+                <div class="flex items-center bg-gray-50 p-3 rounded-xl">
+                    <span class="step-circle">3</span>
+                    <p><b>Quyết tâm:</b> Hứa với Chúa lần sau con sẽ tốt hơn.</p>
+                </div>
+                <div class="flex items-center bg-gray-50 p-3 rounded-xl">
+                    <span class="step-circle">4</span>
+                    <p><b>Xưng tội:</b> Kể tội với Cha giải tội trung thực.</p>
+                </div>
+                <div class="flex items-center bg-gray-50 p-3 rounded-xl">
+                    <span class="step-circle">5</span>
+                    <p><b>Đền tội:</b> Làm việc đạo đức theo lời Cha dặn.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Chuẩn bị trước rước lễ -->
+    <div class="slide" id="slide4">
+        <div class="card">
+            <h2 class="text-3xl font-bold text-sky-600 mb-6">3. CHUẨN BỊ ĐÓN VỊ KHÁCH ĐẶC BIỆT</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-blue-50 rounded-2xl">
+                    <p class="text-4xl mb-2">🚿</p>
+                    <p class="font-bold">Sạch Linh Hồn</p>
+                    <p class="text-sm">Vừa đi xưng tội hoặc không có tội trọng.</p>
+                </div>
+                <div class="p-4 bg-orange-50 rounded-2xl">
+                    <p class="text-4xl mb-2">⏳</p>
+                    <p class="font-bold">Giữ Chay</p>
+                    <p class="text-sm">Không ăn uống (trừ nước lọc) 1 tiếng trước lễ.</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-2xl">
+                    <p class="text-4xl mb-2">👕</p>
+                    <p class="font-bold">Trang Phục</p>
+                    <p class="text-sm">Ăn mặc sạch sẽ, gọn gàng, lịch sự.</p>
+                </div>
+                <div class="p-4 bg-purple-50 rounded-2xl">
+                    <p class="text-4xl mb-2">🤫</p>
+                    <p class="font-bold">Tâm Thế</p>
+                    <p class="text-sm">Giữ thình lặng, trang nghiêm, cầu nguyện.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Cách rước lễ -->
+    <div class="slide" id="slide5">
+        <div class="card">
+            <h2 class="text-3xl font-bold text-sky-600 mb-6">4. CÁCH LÊN RƯỚC LỄ</h2>
+            <div class="flex gap-4 text-left">
+                <div class="w-1/2 p-4 border-2 border-dashed border-sky-300 rounded-2xl">
+                    <p class="font-bold text-sky-700 text-center mb-4 text-xl">Rước bằng TAY ✋</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Tay <b>Trái</b> đặt trên tay <b>Phải</b> (hình ngôi tòa).</li>
+                        <li>Khi Cha nói: "Mình Thánh Chúa Kitô", đáp rõ: <b>"AMEN"</b>.</li>
+                        <li>Dùng tay phải rước ngay và kiểm tra vụn Bánh.</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 p-4 border-2 border-dashed border-pink-300 rounded-2xl">
+                    <p class="font-bold text-pink-700 text-center mb-4 text-xl">Rước bằng MIỆNG 👄</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Cúi mình cung kính trước khi rước.</li>
+                        <li>Mở miệng vừa phải, đáp: <b>"AMEN"</b>.</li>
+                        <li>Cha đặt Bánh vào miệng con trang trọng.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-6 text-red-500 font-bold italic">Lưu ý: Sau khi rước, về chỗ quỳ gối tâm sự với Chúa!</p>
+        </div>
+    </div>
+
+    <!-- Slide 6: Kinh dọn mình -->
+    <div class="slide" id="slide6">
+        <div class="card">
+            <h2 class="text-3xl font-bold text-sky-600 mb-6">🙏 KINH DỌN MÌNH TRƯỚC RƯỚC LỄ</h2>
+            <div class="bg-sky-50 p-8 rounded-3xl text-2xl leading-relaxed italic text-sky-800">
+                "Lạy Chúa Giêsu yêu quý,<br>
+                Trái tim con đang mở rộng chờ Chúa đây.<br>
+                Dù con còn những lỗi lầm chưa ngoan,<br>
+                Nhưng con biết Chúa rất yêu thương con.<br>
+                Xin Chúa hãy vào thăm 'ngôi nhà' linh hồn con,<br>
+                Ở lại với con và giúp con trở thành em bé ngoan.<br>
+                <span class="font-bold">Amen.</span>"
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Đố vui -->
+    <div class="slide" id="slide7">
+        <div class="card">
+            <h2 class="text-3xl font-bold text-yellow-600 mb-6">🌟 TRÒ CHƠI: ĐỐ VUI CÓ THƯỞNG 🌟</h2>
+            <p class="text-xl mb-6 font-bold" id="question-text">Câu hỏi: Khi Cha nói "Mình Thánh Chúa Kitô", con đáp gì?</p>
+            <div id="quiz-options" class="text-left max-w-md mx-auto">
+                <!-- Options will be injected by JS -->
+            </div>
+            <p id="feedback" class="mt-4 font-bold text-xl"></p>
+        </div>
+    </div>
+
+    <!-- Slide 8: Kết thúc -->
+    <div class="slide" id="slide8">
+        <div class="card">
+            <h1 class="text-5xl font-bold text-sky-600 mb-6">CHÚC CÁC CON ĐÓN CHÚA THẬT VUI!</h1>
+            <p class="text-2xl text-gray-600 mb-8">Hãy là những "Thiên Thần nhỏ" của Chúa nhé!</p>
+            <div class="text-9xl">😇👼❤️</div>
+            <button onclick="resetSlides()" class="btn-nav mt-8">Bắt đầu lại</button>
+        </div>
+    </div>
+
+    <!-- Nút điều hướng -->
+    <div class="footer-nav">
+        <button id="prevBtn" onclick="changeSlide(-1)" class="btn-nav bg-gray-400">Quay lại</button>
+        <button id="nextBtn" onclick="changeSlide(1)" class="btn-nav">Tiếp</button>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 8;
+        const quizData = [
+            {
+                q: "Khi Cha nói 'Mình Thánh Chúa Kitô', con đáp gì?",
+                options: ["A. Dạ vâng", "B. Con cảm ơn", "C. Amen"],
+                correct: 2
+            },
+            {
+                q: "Chúng mình cần giữ chay (không ăn uống) trước rước lễ bao lâu?",
+                options: ["A. 1 tiếng đồng hồ", "B. 5 phút", "C. 1 ngày"],
+                correct: 0
+            },
+            {
+                q: "Tay nào đặt lên trên khi rước lễ bằng tay?",
+                options: ["A. Tay Phải", "B. Tay Trái", "C. Cả hai bằng nhau"],
+                correct: 1
+            }
+        ];
+        let currentQuiz = 0;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach(s => s.classList.remove('active'));
+            document.getElementById('slide' + n).classList.add('active');
+            
+            // Ẩn/hiện nút điều hướng
+            document.getElementById('prevBtn').style.visibility = (n === 1) ? 'hidden' : 'visible';
+            document.getElementById('nextBtn').style.visibility = (n === totalSlides) ? 'hidden' : 'visible';
+
+            if (n === 7) loadQuiz();
+        }
+
+        function changeSlide(n) {
+            currentSlide += n;
+            if (currentSlide < 1) currentSlide = 1;
+            if (currentSlide > totalSlides) currentSlide = totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function resetSlides() {
+            currentSlide = 1;
+            currentQuiz = 0;
+            showSlide(1);
+        }
+
+        function loadQuiz() {
+            const quiz = quizData[currentQuiz];
+            document.getElementById('question-text').innerText = `Câu hỏi: ${quiz.q}`;
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+            document.getElementById('feedback').innerText = '';
+
+            quiz.options.forEach((opt, index) => {
+                const div = document.createElement('div');
+                div.className = 'quiz-option';
+                div.innerText = opt;
+                div.onclick = () => checkAnswer(index);
+                optionsContainer.appendChild(div);
+            });
+        }
+
+        function checkAnswer(idx) {
+            const quiz = quizData[currentQuiz];
+            const feedback = document.getElementById('feedback');
+            if (idx === quiz.correct) {
+                feedback.innerText = "Chính xác! Bé giỏi quá! 🥳";
+                feedback.className = "mt-4 font-bold text-xl text-green-500";
+                setTimeout(() => {
+                    currentQuiz++;
+                    if (currentQuiz < quizData.length) {
+                        loadQuiz();
+                    } else {
+                        changeSlide(1);
+                    }
+                }, 1500);
+            } else {
+                feedback.innerText = "Hơi sai rồi, bé chọn lại nhé! 🧐";
+                feedback.className = "mt-4 font-bold text-xl text-red-500";
+            }
+        }
+
+        window.onload = () => showSlide(1);
+    </script>
+</body>
+</html>
